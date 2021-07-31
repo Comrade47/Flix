@@ -1,0 +1,944 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+    float: left;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.container{
+    max-width: 1250px;
+    margin: 0px auto;
+}
+html{
+    font-size: 62.5%;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+:root{
+    
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: #181616;
+}
+/* ============================
+    header Part Starts
+===========================*/
+header{
+    background-color: transparent;
+}
+.menu_fix{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10000;
+    background-color: black;
+    
+}
+.header-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header nav ul li a{
+    display: inline-block;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.4s;
+    margin-left: 3rem;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+header nav ul li a:hover{
+    color: #c0392b;
+}
+#nav-icon{
+    display: none;
+    font-size: 2.5rem;
+    color: White;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+#nav-icon:hover{
+    color: #c0392b;
+}
+
+header .logo a{
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+header .logo a i{
+    color: #c0392b;
+    font-size: 3rem;
+}
+header .logo a span{
+    display: flex;
+    padding-left: 0.5rem;
+}
+header .logo a span p{
+    color: #c0392b;
+}
+header nav {
+    display: block;
+}
+header nav ul{
+    display: flex;
+}
+#cross-icon{
+    display: none;
+}
+/* ============================
+    header Part ends
+===========================*/
+/* ============================
+    banner Part Starts
+===========================*/
+#banner{
+    width: 100%;
+}
+
+.banner{
+    padding: 8rem 0rem;
+    background-image: linear-gradient(to right,rgba(0,0,0,0.9),rgba(0,0,0,0.1)),
+    url(../images/black-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85vh;
+    background-size: cover;
+}
+.banner span{
+    color:white;
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 7rem;
+}
+.banner-2{
+    padding: 8rem 0rem;
+    background-image:linear-gradient(to right,rgba(0,0,0,0.9),rgba(0,0,0,0.1)), 
+    url(../images/supergirl-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    background-position: top;
+}
+.banner-2 span{
+    color:white;
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 7rem;
+}
+.banner-3{
+    padding: 8rem 0rem;
+    background-image:linear-gradient(to right, rgba(0,0,0,0.7) 40%,rgba(0,0,0,0.3) 100%), 
+    url(../images/transformer-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    background-position: top;
+}
+.banner-3 span{
+    color:white;
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 7rem;
+}
+.banner-4{
+    padding: 8rem 0rem;
+    background-image:linear-gradient(to right,rgba(0,0,0,0.9) 10%,rgba(0,0,0,0.1) 100%), 
+    url(../images/wanda-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 85vh;
+}
+.banner-4 span{
+    color:white;
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 7rem;
+}
+.ratings{
+    margin-top: 3rem;
+}
+.ratings ul li a{
+    font-size: 1.3rem;
+    color: white;
+    margin-left: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.ratings ul li a i{
+    color: #c0392b;
+    position: absolute;
+    left: 0px;
+    top: 0.6rem;
+}
+.details{
+    display: block;
+    padding-top: 5rem;
+    width: 30%;
+}
+.details p{
+    display: block;
+    color: white;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+}
+.btn{
+    margin-top: 2rem;
+}
+.btn a{
+    display: inline-block;
+    padding: 1rem 6rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    z-index: 1;
+    position: relative;
+}
+
+.btn a i{
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    font-size: 2rem;
+}
+
+.btn a:hover:after{
+    width: 100%;
+}
+.btn a:after{
+    position: absolute;
+    left: -1rem;
+    top: 0px;
+    width: 40%;
+    z-index: -1;
+    height: 100%;
+    content: '';
+    background-color: #c0392b;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.single-item{
+    position: relative;
+}
+.prev_icon:hover{
+    color: #c0392b;
+}
+.prev_icon{
+    font-size: 3rem;
+    color: white;
+    z-index: 999;
+    transition: all linear 0.4s;
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    cursor: pointer;
+    transform: translateY(-50%);
+    padding: 2rem;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.next_icon{
+    font-size: 3rem;
+    color: white;
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.next_icon:hover{
+    color: #c0392b;
+}
+/* ============================
+    banner Part ends
+===========================*/
+
+/* ============================
+    movie Part Starts
+
+===========================*/
+/* .all-movies{
+    display: flex;
+    align-items: center;
+
+} */
+.item{
+    width: 25%;
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.item:hover img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.item .img{
+    width: 100%;
+}
+.item .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.item .text{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start; 
+    justify-content: flex-end;   
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem;
+    background: linear-gradient(to top,rgba(0,0,0,0.99),rgba(0,0,0,0.1));
+}
+.item .text h3{
+    font-size: 2.7rem;
+    color: white;
+    font-weight: 900;
+}
+.item .ratings{
+    margin-top: 1rem;
+}
+.multiple-items button{
+    display: none;
+    
+}
+/* ============================
+    movie Part ends
+===========================*/
+/* ============================
+    latest movies Part Starts
+===========================*/
+#latest-movie{
+    padding: 5rem 0rem;
+}
+.common-header h2{
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 2.5rem;
+    position: relative;
+}
+.common-header h2:after{
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 0.5rem;
+    background-color: #c0392b;
+
+}
+.row{
+    margin-top: 4rem;
+    display: flex;
+    
+}
+.row .col{
+    width: 24%;
+    height: 60vh;
+    margin: 0rem 1.5rem;
+    position: relative;
+    cursor: pointer;
+    z-index: 999;
+    overflow: hidden;
+    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.row .col:hover img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.row .col .image{
+    width: 100%;
+    height: 100%;
+}
+.row .col .image img{
+    width: 100%;
+    transition: all ease-in-out 0.4s;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.row .col .col-text{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    padding: 1rem ;
+    flex-direction: column;
+    align-items:flex-end; 
+    justify-content: flex-end;   
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.99),rgba(0,0,0,0.1));
+}
+
+.row .col .col-text h3{
+    font-size: 2.7rem;
+    color: white;
+    font-weight: 900;
+}
+.row .col .col-text .ratings{
+    margin-top: 0rem;
+}
+.responsive {
+    position: relative;
+}
+
+.responsive button{
+    border: 0px;
+    outline: none;
+    color: white;
+    background-color: rgba(0, 0, 0,0.7);
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 50%;
+    transition: all ease-in-out 0.4s;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 9999;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.responsive button:hover{
+    color: #c0392b;
+}
+/* ============================
+    latest movies Part ends
+===========================*/
+/* ============================
+    latest series Part Starts
+===========================*/
+#latest-series{
+    padding: 0rem 0rem 7rem;
+}
+
+.responsive-2 {
+    position: relative;
+}
+.responsive-2 button:first-child{
+    position: absolute;
+    left: 2rem;
+}
+.responsive-2 button:last-child{
+    position: absolute;
+    right: 2rem;
+}
+.responsive-2 button i{
+    font-size: 3rem;
+    z-index: 1;
+}
+.responsive-2 button{
+    border: 0px;
+    outline: none;
+    color: white;
+    background-color: rgba(0, 0, 0,0.7);
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 50%;
+    transition: all ease-in-out 0.4s;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 9999;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.responsive-2 button:hover{
+    color: #c0392b;
+}
+/* ============================
+    latest series Part ends
+===========================*/
+/* ============================
+    latest cartoons Part Starts
+===========================*/
+#latest-cartoons{
+    padding: 0rem 0rem 7rem;
+}
+.responsive-3 {
+    position: relative;
+}
+.responsive-3 button:first-child{
+    position: absolute;
+    left: 2rem;
+}
+.responsive-3 button:last-child{
+    position: absolute;
+    right: 2rem;
+}
+.responsive-3 button i{
+    font-size: 3rem;
+    z-index: 1;
+}
+.responsive-3 button{
+    border: 0px;
+    outline: none;
+    color: white;
+    background-color: rgba(0, 0, 0,0.7);
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 50%;
+    transition: all ease-in-out 0.4s;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 9999;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.responsive-3 button:hover{
+    color: #c0392b;
+}
+/* ============================
+    latest cartoons Part ends
+===========================*/
+/* ============================
+    price Part Starts
+===========================*/
+#price{
+    padding: 7rem 0rem;
+}
+.all-cards{
+    margin-top: 
+    5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.all-cards .card{
+    padding: 4rem 2.5rem;
+    background-color: #221f1f;
+    color: white;
+    width: 30%;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.all-cards .card:hover{
+    box-shadow: 0.3rem 0.2rem 0.4rem 0.3rem rgba(0,0,0,0.7);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.all-cards .card:after{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0.5rem;
+    background-color: #c0392b;
+
+}
+.all-cards .card .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.all-cards .card .header p{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.all-cards .card .list ul{
+    text-align: center;
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+.all-cards .card .list ul li{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.reg-btn{
+    text-align: center;
+    margin-top: 5rem;
+}
+.reg-btn a{
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    transition: all ease-in-out 0.4s;
+    z-index: 1;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+.reg-btn a:hover:after{
+    width: 100%;
+}
+.reg-btn a:after{
+    position: absolute;
+    left: 0px;
+    content: '';
+    top: 0px;
+    width: 40%;
+    height: 100%;
+    transition: all ease-in-out 0.4s;
+    background-color: #c0392b;
+    z-index: -1;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -ms-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+}
+/* ============================
+    price Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    media queries Part ends
+===========================*/
+@media screen and (max-width:886px){
+    header{
+        width: 100%;
+    }
+    .header-cont{
+        padding: 2rem 1rem;
+    }
+    header nav ul li a{
+        font-size: 2.2rem;
+        display: block;
+        text-align: center;
+    }
+    header nav ul li a:hover{
+        color: black;
+    }
+    header nav ul li{
+        display: block;
+        margin-top: 1.5rem;
+    }
+    header .logo a i{
+        font-size: 1.8rem;
+    }
+    header .logo span{
+        font-size: 2rem;
+    }
+    #nav-icon{
+        display: block;
+        font-size: 2rem;
+        text-align: right;
+        position: relative;
+        width: 50%;
+    }
+    header nav ul{ 
+        background-color: #c0392b;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: 0rem;
+        left: 0px;
+        opacity:0;
+        visibility: hidden;
+        z-index: 9999;
+        height: 100vh;
+        overflow: hidden;        
+    }
+
+    #cross-icon{
+        
+        font-size: 2.5rem;
+        color: white;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        z-index: 9999;
+        transition: all ease-in-out 0.3s;
+        -webkit-transition: all ease-in-out 0.3s;
+        -moz-transition: all ease-in-out 0.3s;
+        -ms-transition: all ease-in-out 0.3s;
+        -o-transition: all ease-in-out 0.3s;
+    }
+    #cross-icon:hover{
+        color: black;
+    }
+    
+    .multiple-items button{
+        display: none;
+    }
+    .banner{
+        width: 100%;
+    }
+    .banner span{
+        display: block;
+        text-align: center;
+        font-size: 5rem;
+        line-height: 4.5rem;
+    }
+    .banner .btn{
+        margin-top: 4rem;
+    }
+    .main-cont{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main-cont .details{
+        display: block;
+        padding-top: 5rem;
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .main-cont .btn a{
+        font-size: 1.5rem;
+        padding: 1rem 4rem;
+        position: relative;
+    }
+    .main-cont .btn a i{
+        position: absolute;
+        top: 1.4rem;
+        left: 0.5rem;
+    }
+
+    .banner-2{
+        width: 100%;
+    }
+    .banner-2 span{
+        display: block;
+        text-align: center;
+        font-size: 5rem;
+        line-height: 4.5rem;
+    }
+    
+    .banner-3{
+        width: 100%;
+    }
+    .banner-3 span{
+        display: block;
+        text-align: center;
+        font-size: 5rem;
+        line-height: 4.5rem;
+    }
+    .banner-4{
+        width: 100%;
+    }
+    .banner-4 span{
+        display: block;
+        text-align: center;
+        font-size: 5rem;
+        line-height: 4.5rem;
+    }
+    .common-header{
+        margin-left: 2rem;
+    }
+    .all-cards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1rem;
+        padding: 1.5rem;
+        
+    }
+    .all-cards .card{
+        display: block;
+        width: 80%;
+        margin-top: 3rem;
+     
+}
+    .all-cards .card:hover{
+        transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+        -moz-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        -o-transform: scale(1.03);
+}
+    .multiple-items .item{
+        height: 60vh;
+    }
+    .responsive .col{
+        height: 40vh;
+    }
+    .responsive button i{
+        font-size: 1.3rem;
+    }
+    .responsive button{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .responsive-2 .col{
+        height: 40vh;
+    }
+    .responsive-2 button i{
+        font-size: 1.3rem;
+    }
+    .responsive-2 button{
+        width: 4rem;
+        height: 4rem;
+    }
+    .responsive-3 .col{
+        height: 40vh;
+    }
+    .responsive-3 button i{
+        font-size: 1.3rem;
+    }
+    .responsive-3 button{
+        width: 4rem;
+        height: 4rem;
+    }
+
+   
+}
+
+
+/* ============================
+    media queries Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
+/* ============================
+    Part Starts
+===========================*/
+/* ============================
+    Part ends
+===========================*/
